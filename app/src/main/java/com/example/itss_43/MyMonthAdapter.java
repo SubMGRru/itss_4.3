@@ -32,6 +32,10 @@ public class MyMonthAdapter extends ArrayAdapter<MyMonth> {
             ((ImageView) convertView.findViewById(R.id.imageView)).setImageResource(R.drawable.flag_cuba);
         else if (month.flag_res == "usa")
             ((ImageView) convertView.findViewById(R.id.imageView)).setImageResource(R.drawable.flag_united_states);
+        else if (month.flag_res == "spain")
+            ((ImageView) convertView.findViewById(R.id.imageView)).setImageResource(R.drawable.flag_spain);
+        else if (month.flag_res == "mexico")
+            ((ImageView) convertView.findViewById(R.id.imageView)).setImageResource(R.drawable.flag_mexico);
         else
             ((ImageView) convertView.findViewById(R.id.imageView)).setImageResource(R.drawable.flag_france);
         return convertView;
